@@ -47,9 +47,7 @@ const getDocumentTool = tool({
       ),
   }),
   execute: async (input) => {
-    return traceTool(() => getDocument(input), {
-      name: "getDocument",
-    })();
+    return traceTool(getDocument)(input);
   },
 });
 
@@ -87,9 +85,7 @@ const editDocumentTool = tool({
     content: z.string().describe("The content to edit the document with."),
   }),
   execute: async (input) => {
-    return traceTool(() => editDocument(input), {
-      name: "editDocument",
-    })();
+    return traceTool(editDocument)(input);
   },
 });
 
@@ -102,9 +98,7 @@ const undoEditDocumentTool = tool({
   description: "Undo the last edit to the document.",
   inputSchema: z.object({}),
   execute: async () => {
-    return traceTool(() => undoEditDocument(), {
-      name: "undoEditDocument",
-    })();
+    return traceTool(undoEditDocument)();
   },
 });
 

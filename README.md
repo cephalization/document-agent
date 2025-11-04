@@ -2,6 +2,8 @@
 
 A simple example of a CLI Agent that can edit a document. Traced for [Arize Phoenix](https://github.com/Arize-ai/phoenix).
 
+![Document Agent](./assets/preview.png)
+
 ## Running
 
 The document agent leverages Node.js 24 in order to execute without transpilation.

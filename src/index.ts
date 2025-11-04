@@ -109,7 +109,7 @@ const undoEditDocumentTool = tool({
 });
 
 const DocumentAgent = new Agent({
-  model: openai("gpt-4o"),
+  model: openai.chat("gpt-4o"),
   tools: {
     getDocument: getDocumentTool,
     editDocument: editDocumentTool,
@@ -194,9 +194,9 @@ async function main() {
 
       await stream.message(responsesGenerator());
 
-      // // Add LLM generated messages to the message history
-      // const responseMessages = (await result.response).messages;
-      // state.messages.push(...responseMessages);
+      // Add LLM generated messages to the message history
+      const responseMessages = (await result.response).messages;
+      state.messages.push(...responseMessages);
 
       // const finishReason = await result.finishReason;
 

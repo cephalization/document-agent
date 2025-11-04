@@ -1,7 +1,6 @@
 import { openai } from "@ai-sdk/openai";
 import {
   type ModelMessage,
-  streamText,
   tool,
   Experimental_Agent as Agent,
   stepCountIs,
@@ -191,22 +190,6 @@ async function main() {
       // Add LLM generated messages to the message history
       const responseMessages = (await result.response).messages;
       state.messages.push(...responseMessages);
-
-      // const finishReason = await result.finishReason;
-
-      // if (finishReason === "tool-calls") {
-      //   const toolCalls = await result.toolCalls;
-
-      //   // Handle all tool call execution here
-      //   for (const toolCall of toolCalls) {
-      //     toolCall.
-      //   }
-      // } else {
-      //   // Exit the loop when the model doesn't request to use any more tools
-      //   console.log("\\n\\nFinal message history:");
-      //   console.dir(messages, { depth: null });
-      //   break;
-      // }
     }
 
     await documentAgent();

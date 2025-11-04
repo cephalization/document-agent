@@ -1,0 +1,39 @@
+{
+  "name": "traced-agent",
+  "version": "1.0.0",
+  "description": "A simple example of an Agent that can edit a document. Traced for Arize Phoenix.",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "node --import ./src/instrumentation.ts ./src/index.ts",
+    "d:up": "docker start arize-phoenix 2>/dev/null || docker run --pull=always -d --name arize-phoenix --rm -p 6006:6006 -e PHOENIX_SQL_DATABASE_URL=\"sqlite:///:memory:\" arizephoenix/phoenix:latest",
+    "d:down": "docker rm -f arize-phoenix"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "tracing",
+    "arize",
+    "phoenix",
+    "typescript",
+    "nodejs"
+  ],
+  "author": "Tony Powell <powell.anthonyd@proton.me>",
+  "license": "MIT",
+  "dependencies": {
+    "@ai-sdk/openai": "^2.0.62",
+    "@arizeai/openinference-core": "https://pkg.pr.new/Arize-ai/openinference/@arizeai/openinference-core@2344",
+    "@arizeai/openinference-vercel": "^2.3.5",
+    "@arizeai/phoenix-otel": "^0.2.1",
+    "@clack/core": "^0.5.0",
+    "@clack/prompts": "^0.11.0",
+    "ai": "^5.0.87",
+    "tiny-invariant": "^1.3.3",
+    "zod": "^4.1.12"
+  },
+  "pnpm": {
+    "overrides": {
+      "import-in-the-middle": "^2.0.0"
+    }
+  }
+}

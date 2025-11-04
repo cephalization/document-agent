@@ -18,8 +18,8 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0
       '@arizeai/phoenix-otel':
-        specifier: ^0.2.1
-        version: 0.2.1
+        specifier: ^0.3.0
+        version: 0.3.0
       '@clack/core':
         specifier: ^0.5.0
         version: 0.5.0
@@ -69,13 +69,13 @@ packages:
   '@arizeai/openinference-semantic-conventions@2.1.2':
     resolution: {integrity: sha512-u7UeuU9bJ1LxzHk0MPWb+1ZcotCcJwPnKDXi7Rl2cPs1pWMFg9Ogq7zzYZX+sDcibD2AEa1U+ElyOD8DwZc9gw==}
 
-  '@arizeai/openinference-vercel@2.4.0':
-    resolution: {integrity: sha512-ow3ca6Yx/KMaa5J4GUXVvqHHnqef9IlGJVjnjiNeNO8R9aoK05Uz2T5byxc+3bm8bHlsawPAo1YbE3CqUo9ZAw==}
+  '@arizeai/openinference-vercel@2.5.0':
+    resolution: {integrity: sha512-7bAQnx6Gfr2mzSTcVFeErDyWQklVBRNOxz8B4izSnqxx5koNVgf035KMRmHAXHO5sKIfA4Z5gwtf6+Q3L9cYJw==}
     peerDependencies:
       '@opentelemetry/api': '>=1.7.0 <2.0.0'
 
-  '@arizeai/phoenix-otel@0.2.1':
-    resolution: {integrity: sha512-NSyTjHX0jqkKEVfJUcjWoMxTVvkqH498BEqeFrz0vhNKBkfTJ2tDe89fSnMznBOy2rKwb3/ywrnpWjoYgmA37A==}
+  '@arizeai/phoenix-otel@0.3.0':
+    resolution: {integrity: sha512-Ats+HdpcEKOMLxK9LQLKUU4Hp2LlolK3vRjjxIV3pVqgVcABAxJY/jM8PHuu9lJy/ObykSMUd8azU450B+oZqQ==}
 
   '@clack/core@0.5.0':
     resolution: {integrity: sha512-p3y0FIOwaYRUPRcMO7+dlmLh8PSRcrjuTndsiA0WAFbWES0mLZlrjVoBRZ9DzkPFJZG6KGkJmoEAY0ZcVWTkow==}
@@ -369,17 +369,17 @@ snapshots:
 
   '@arizeai/openinference-semantic-conventions@2.1.2': {}
 
-  '@arizeai/openinference-vercel@2.4.0(@opentelemetry/api@1.9.0)':
+  '@arizeai/openinference-vercel@2.5.0(@opentelemetry/api@1.9.0)':
     dependencies:
       '@arizeai/openinference-core': 2.0.0
       '@arizeai/openinference-semantic-conventions': 2.1.2
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
 
-  '@arizeai/phoenix-otel@0.2.1':
+  '@arizeai/phoenix-otel@0.3.0':
     dependencies:
       '@arizeai/openinference-semantic-conventions': 1.1.0
-      '@arizeai/openinference-vercel': 2.4.0(@opentelemetry/api@1.9.0)
+      '@arizeai/openinference-vercel': 2.5.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/exporter-trace-otlp-proto': 0.57.2(@opentelemetry/api@1.9.0)

@@ -22,8 +22,7 @@
   "license": "MIT",
   "dependencies": {
     "@ai-sdk/openai": "^2.0.62",
-    "@arizeai/openinference-core": "https://pkg.pr.new/Arize-ai/openinference/@arizeai/openinference-core@2344",
-    "@arizeai/openinference-vercel": "^2.3.5",
+    "@arizeai/openinference-core": "^2.0.0",
     "@arizeai/phoenix-otel": "^0.2.1",
     "@clack/core": "^0.5.0",
     "@clack/prompts": "^0.11.0",
